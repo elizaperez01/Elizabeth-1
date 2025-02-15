@@ -11,19 +11,20 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(to bottom, #FFDD44, #FFAA33);
+            background: #000000; /* Fondo negro */
             font-family: Arial, sans-serif;
             text-align: center;
         }
         .girasol {
-            width: 150px;
-            animation: girar 4s linear infinite;
+             width: 200px; /* Aumenté el tamaño */
+         animation: girar 6s linear infinite;
         }
         @keyframes girar {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
         .mensaje {
+            font-family: 'Georgia', serif; /* Fuente diferente */
             margin-top: 20px;
             font-size: 20px;
             background: white;
@@ -42,14 +43,14 @@
             height: 150px;
         }
         .petalo {
-            fill: #FFD700;
-            transform-origin: 50% 50%;
-            animation: petalos 4s linear infinite;
+           fill: #FFD700;
+           transform-origin: 50% 50%;
+           animation: petalos 6s linear infinite; /* Aumenté la duración de la animación */
         }
         @keyframes petalos {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
+          0% { transform: scale(1); }
+         50% { transform: scale(1.2); } /* Hice que el cambio de tamaño sea más pronunciado */
+        100% { transform: scale(1); }
         }
     </style>
 </head>
